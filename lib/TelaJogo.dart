@@ -51,7 +51,6 @@ class _TelaJogoState extends State<TelaJogo> {
     );  
   }
   
-
   void setResultado(TipoMao? maoJogador, TipoMao? maoComputador) {
     if (maoJogador == maoComputador) {
       telaResultado = empate; 
@@ -85,9 +84,7 @@ class _TelaJogoState extends State<TelaJogo> {
               vertical: 20
             ),
             height: 100,
-            //margin: EdgeInsets.only(top: 30),
             child: ElevatedButton(
-              //onPressed: () => {},
               onPressed: jokenpo,
               child: Text(
                 'Joken.......   PÔ',
@@ -107,7 +104,6 @@ class _TelaJogoState extends State<TelaJogo> {
               ),
               color: Colors.black87,
             ),
-
           ),
           telaResultado,
        ],
