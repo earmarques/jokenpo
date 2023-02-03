@@ -79,7 +79,7 @@ Interessante notar como os arquitetos do Flutter amarraram a covariância utiliz
 - **_TelaJogoState** - possui apenas três variáveis de estado, a `maoJogador`, a `maoComputador`, ambas valores de constantes do enum `TipoMao`, e o widget `telaResultado`, que iniciamos com uma tela vazia, mas que será atualizado em função do estado das mãos dos jogadores. Só precisou de três métodos para fazer o comportamento da aplicação:
 
   - **jokenpo()** - é o método invocado quando clicamos o botão azul. Nele usamos um objeto `Random` para sortear um número, que usaremos como índice do vetor de constantes `maos`. Este sorteio é usado para estabelecermos qual será a mão do computador. A mão do jogador é obtida do widget `painelOpcoes` e estará destacada com um contorno laranja.
-  <br>A seguir, invocamos o método sobreposto `setState` que invoca os outros dois métodos que controlam o comportamento: `updateRingue` e `setResultado`. Pode parecer estranho este `setState`, mas ao que parece ele faz parte de um *Template Method* chamado em algum momento na arquitetura quando for construir a árvore de widget; é a forma do Flutter trabalhar.
+  <br>A seguir, invocamos o método sobreposto `setState`, que invoca os outros dois métodos que controlam o comportamento: `updateRingue` e `setResultado`. Pode parecer estranho este `setState`, mas ao que parece ele faz parte de um *Template Method* chamado em algum momento na arquitetura quando for construir a árvore de widget; é a forma do Flutter trabalhar.
 
   ```dart
   var maos = [TipoMao.PEDRA, TipoMao.PAPEL, TipoMao.TESOURA];
