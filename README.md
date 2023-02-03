@@ -8,6 +8,8 @@ Aplicativo mobile em Flutter do jogo pedra-papel-tesoura; ***joken...pô***.
 
 > Desenvolva o jogo pedra-papel-tesoura, homem versus máquina. O usuário escolhe uma das três opções de mãos e a máquina faz um sorteio aleatório para escolher uma opção dentre as três. O app deverá apresentar o resultado: ganhou, perdeu ou empate.
 
+:heavy_check_mark: Os códigos podem ser encontrados dentro da pasta :file_folder: lib.
+
 ## Modelagem
 
  Procuramos modelar o desafio usando a Orientação a Objetos. O Flutter trabalha muito com componentes gráficos, os _widget_. Então buscamos identificar os componentes gráficos passíveis de generalização e repetidos, a fim de usar a composição para aproveitamento de código, além de classes conceituais de backend.
